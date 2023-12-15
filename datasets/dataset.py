@@ -40,15 +40,10 @@ class Day2NightDataset(Dataset):
 
         D_image_list = open(opt.image_list_D, 'r')
         for file in sorted(D_image_list):
-            # D_image_paths.append(os.path.join('/home/',opt.image                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          _root_D, file[:-1]))
-            # D_label_paths.append(os.path.join(opt.label_root_D, file[:-1]))
-            # D_image_paths.append('/home'+file[:-1])
             D_image_paths.append(file[:-1])
         
         D_label_list = open(opt.label_list_D, 'r')
         for file in sorted(D_label_list):
-            # D_label_paths.append(os.path.join(opt.label_root_D, file[:-1]))
-            # D_label_paths.append('/home'+file[:-1])
             D_label_paths.append(file[:-1])
         
         return D_image_paths, D_label_paths
