@@ -19,7 +19,7 @@ cd ./lidar_model_da
 python main.py
 ```
 
-## Voxel-Ray-Interaction (VRI) module
+## Image-to-Image translation from sunny image to adverse weather image
 
 ### Introduction
 This repository is released for Voxel-Ray-Interaction (VRI) module.
