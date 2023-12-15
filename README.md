@@ -1,11 +1,11 @@
-# Data Augmentation (DA)
+# Camera Data Augmentation (CDA)
 
-## Camera Data Augmentation (CDA)
+## Image-to-image translation form day image to night image
 
 ### Introduction
 
 * This repository is released for Camera Data Augmentation (CDA).
-* To do CDA, this work changes the weather of orginal image from sunny to specific adverse weather
+* This work translates day image to night image.
 * This works on image files (*.png) from the Cityscapes dataset.
 
 ### Requirements
