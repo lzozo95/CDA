@@ -29,9 +29,9 @@ python main.py
 * This works on image files (*.png) from the Cityscapes dataset.
 
 ### Requirements
-Python 3.7.5\
-Numpy 1.20.3\
-(For visualization) Matplotlib
+Python 3.9.16\
+Pytorch 1.12.0\
+Numpy 1.23.5\
 
 ### Demo
 ```
