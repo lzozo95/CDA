@@ -14,7 +14,7 @@ from deeplab import Deeplab #lys
 from torch.autograd import Variable
 
 def semantic(init_weights=None):
-        init_weights = './cyclegan_sem_model.pth'
+        init_weights = './models/cyclegan_sem_model.pth'
         model = Deeplab(num_classes=19)
         if init_weights is not None:
             saved_state_dict = torch.load(init_weights, map_location=lambda storage, loc: storage)
