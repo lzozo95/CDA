@@ -76,7 +76,7 @@ class Day2NightDataset(Dataset):
 
 
     def __len__(self):
-        return len(self.D_image_paths)#, len(self.N_image_paths))
+        return len(self.D_image_paths)
 
 
     def create_label(self, label):
