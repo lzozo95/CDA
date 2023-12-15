@@ -67,8 +67,8 @@ parser.add_argument('--weather', type=str, required=True)
 
 parser.add_argument('--image_root_D', type=str, default='/mnt/hdd2/lyj/Data/KIAPI/')
 parser.add_argument('--image_list_D', type=str, default='/mnt/hdd2/lyj/Data/cityscapes/cityscapes_phase_image.txt')
-# parser.add_argument('--label_root_D', type=str, default='/mnt/hdd2/lyj/Data/cityscapes/gtFine_trainvaltest/gtFine/phase')
-# parser.add_argument('--label_list_D', type=str, default='/mnt/hdd2/lyj/Data/cityscapes/cityscapes_phase_label.txt')
+parser.add_argument('--label_root_D', type=str, default='/mnt/hdd2/lyj/Data/cityscapes/gtFine_trainvaltest/gtFine/phase')
+parser.add_argument('--label_list_D', type=str, default='/mnt/hdd2/lyj/Data/cityscapes/cityscapes_phase_label.txt')
 
 # parser.add_argument('--image_root_N', type=str, default='/mnt/hdd2/lyj/Data/acdc/rgb_anon/weather/train')
 # parser.add_argument('--image_list_N', type=str, default='/mnt/hdd2/lyj/Data/acdc/acdc_weather_phase_image.txt')
