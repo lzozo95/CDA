@@ -10,7 +10,6 @@ from datasets.transforms import *
 import torchvision.transforms as standard_transforms
 from datasets.transforms.transforms import MaskToTensor
 from datasets.transforms.joint_transforms import Resize, RandomCrop, RandomHorizontallyFlip
-import pdb
 from torch.utils.data import Dataset
 from deeplab import Deeplab
 import network
@@ -18,7 +17,6 @@ import network
 class Day2NightDataset(Dataset):
     def __init__(self, opt):
         self.opt = opt
-        # pdb.set_trace()
         self.D_image_paths, self.D_label_paths, self.N_image_paths, self.N_label_paths = self.get_paths(opt)
         self.dataset_size = self.__len__()
         self.id_to_trainid = {7: 0, 8: 1, 11: 2, 12: 3, 13: 4, 17:5, 19:6, 20: 7, 21: 8, 22: 9, 23: 10, 24: 11, 25: 12,
@@ -34,7 +32,6 @@ class Day2NightDataset(Dataset):
 
 
     def get_paths(self, opt):
-        # pdb.set_trace()
         opt.image_root_D = opt.image_root_D.replace('phase', opt.phase)
         opt.image_list_D = opt.image_list_D.replace('phase', opt.phase)
         opt.label_root_D = opt.label_root_D.replace('phase', opt.phase)
@@ -78,7 +75,6 @@ class Day2NightDataset(Dataset):
 
 
     def __getitem__(self, index):
-        # pdb.set_trace()
         # day image
         D_image_path = self.D_image_paths[index]
         D_image = Image.open(D_image_path).convert('RGB') # shape = (2048, 1024)
@@ -317,14 +313,12 @@ class CustomDay2NightDataset(Dataset):
             # D_label = self.create_label(Image.open(D_label_path))
 
 
-            # pdb.set_trace()
             # Data Processing
             # D_image, D_label = self.day_joint_transform(D_image, D_label)
 
             D_image= self.img_transform(D_image)
             D_image_for_compute = D_image.unsqueeze(0)
             D_image_for_compute = D_image_for_compute.cuda()
-            # pdb.set_trace()
             with torch.no_grad():
                 # D_onehot_pred = self.model(D_image_for_compute)['out'][0]
                 D_onehot_pred = self.model(D_image_for_compute)[0].cpu()
@@ -474,7 +468,6 @@ class CustomTRAINDay2NightDataset(Dataset):
 
 
     def __getitem__(self, index):
-        # pdb.set_trace()
         # day image
         D_image_path = self.D_image_paths[index]
         D_image = Image.open(D_image_path).convert('RGB') # shape = (2048, 1024)
