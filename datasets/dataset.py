@@ -15,7 +15,8 @@ from torch.utils.data import Dataset
 class Day2NightDataset(Dataset):
     def __init__(self, opt):
         self.opt = opt
-        self.D_image_paths, self.D_label_paths, self.N_image_paths, self.N_label_paths = self.get_paths(opt)
+        # self.D_image_paths, self.D_label_paths, self.N_image_paths, self.N_label_paths = self.get_paths(opt)
+        self.D_image_paths, self.D_label_paths = self.get_paths(opt)
         self.dataset_size = self.__len__()
         self.id_to_trainid = {7: 0, 8: 1, 11: 2, 12: 3, 13: 4, 17:5, 19:6, 20: 7, 21: 8, 22: 9, 23: 10, 24: 11, 25: 12,
                               26: 13, 27:14, 28:15, 31:16, 32: 17, 33: 18}
