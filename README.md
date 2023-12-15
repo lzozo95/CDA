@@ -22,7 +22,11 @@ python main.py
 ## Image-to-Image translation from sunny image to adverse weather image
 
 ### Introduction
-This repository is released for Voxel-Ray-Interaction (VRI) module.
+
+* This repository is released for Camera Data Augmentation (CDA).
+* This work translates sunny image to adverse weather image.
+* Adverse weathers in this work contain foggy, rainy, snowy weathers.
+* This works on image files (*.png) from the Cityscapes dataset.
 
 ### Requirements
 Python 3.7.5\
