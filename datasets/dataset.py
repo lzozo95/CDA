@@ -51,21 +51,7 @@ class Day2NightDataset(Dataset):
             # D_label_paths.append('/home'+file[:-1])
             D_label_paths.append(file[:-1])
         
-        N_image_list = open(opt.image_list_N, 'r')
-        for file in sorted(N_image_list):
-            # N_image_paths.append(os.path.join(opt.image_root_N, file[:-1]))
-            # N_image_paths.append('/home'+file[:-1])
-            N_image_paths.append(file[:-1])
-
-
-        
-        N_label_list = open(opt.label_list_N, 'r')
-        for file in sorted(N_label_list):
-            # N_label_paths.append(os.path.join(opt.label_root_N, file[:-1]))
-            N_label_paths.append(file[:-1])
-            # N_label_paths.append('/home'+file[:-1])
-
-        return D_image_paths, D_label_paths, N_image_paths, N_label_paths
+        return D_image_paths, D_label_paths
 
 
     def __getitem__(self, index):
