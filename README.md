@@ -11,7 +11,7 @@
 ### Requirements
 Python 3.9.16\
 Pytorch 1.12.0\
-Numpy 1.23.5\
+Numpy 1.23.5
 
 ### Demo
 ```
@@ -31,7 +31,7 @@ python main.py
 ### Requirements
 Python 3.9.16\
 Pytorch 1.12.0\
-Numpy 1.23.5\
+Numpy 1.23.5
 
 ### Demo
 ```
