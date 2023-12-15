@@ -94,10 +94,10 @@ parser.add_argument('--inception_b', type=str, default='.', help="path to the pr
 
 opts = parser.parse_args()
 
-opts.image_root_N = opts.image_root_N.replace('weather', opts.weather)
-opts.image_list_N = opts.image_list_N.replace('weather', opts.weather)
-opts.label_root_N = opts.label_root_N.replace('weather', opts.weather)
-opts.label_list_N = opts.label_list_N.replace('weather', opts.weather)
+# opts.image_root_N = opts.image_root_N.replace('weather', opts.weather)
+# opts.image_list_N = opts.image_list_N.replace('weather', opts.weather)
+# opts.label_root_N = opts.label_root_N.replace('weather', opts.weather)
+# opts.label_list_N = opts.label_list_N.replace('weather', opts.weather)
 
 torch.manual_seed(opts.seed)
 torch.cuda.manual_seed(opts.seed)
