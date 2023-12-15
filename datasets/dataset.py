@@ -58,38 +58,18 @@ class Day2NightDataset(Dataset):
         D_label_path = self.D_label_paths[index]
         D_label = self.create_label(Image.open(D_label_path))
 
-        # index_N = random.randint(0, len(self.N_image_paths) - 1)
-        # # night image
-        # N_image_path = self.N_image_paths[index_N]
-        # N_image = Image.open(N_image_path).convert('RGB') # shape = (1920, 1080)
-
-        # # night label
-        # N_label_path = self.N_label_paths[index_N]
-        # N_label = self.create_label(Image.open(N_label_path))
-
         # Data Processing
         D_image, D_label = self.day_joint_transform(D_image, D_label)
-        # N_image, N_label = self.night_joint_transform(N_image, N_label)
-        
-        # D_image, N_image = self.img_transform(D_image), self.img_transform(N_image)
-        # D_label, N_label = self.target_transform(D_label), self.target_transform(N_label)
-        # D_onehot_label, N_onehot_label = self.one_hot_label(D_label), self.one_hot_label(N_label)
+
         D_image= self.img_transform(D_image)
         D_label = self.target_transform(D_label)
         D_onehot_label = self.one_hot_label(D_label)
-
-        # print(D_image_path)
-        # print(N_image_path)
 
         data = {
             'D_image': D_image,
             'D_label': D_label,
             'D_onehot_label': D_onehot_label,
-            'D_image_path': D_image_path,
-            # 'N_image': N_image,
-            # 'N_label': N_label,
-            # 'N_onehot_label': N_onehot_label,
-            # 'N_image_path': N_image_path
+            'D_image_path': D_image_path
         }
         
         return data
