@@ -35,13 +35,8 @@ class Day2NightDataset(Dataset):
         opt.image_list_D = opt.image_list_D.replace('phase', opt.phase)
         opt.label_root_D = opt.label_root_D.replace('phase', opt.phase)
         opt.label_list_D = opt.label_list_D.replace('phase', opt.phase)
-        opt.image_root_N = opt.image_root_N.replace('phase', opt.phase)
-        opt.image_list_N = opt.image_list_N.replace('phase', opt.phase)
-        opt.label_root_N = opt.label_root_N.replace('phase', opt.phase)
-        opt.label_list_N = opt.label_list_N.replace('phase', opt.phase)
-        
+
         D_image_paths, D_label_paths = [], []
-        N_image_paths, N_label_paths = [], []
 
         D_image_list = open(opt.image_list_D, 'r')
         for file in sorted(D_image_list):
