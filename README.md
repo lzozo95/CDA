@@ -4,7 +4,8 @@
 
 ### Introduction
 
-* This repository is released for LiDAR Super-Resolution (LSR).
+* This repository is released for Camera Data Augmentation (CDA).
+* To do CDA, this work changes the weather of orginal image from sunny to specific adverse weather
 * This works on velodyne files (*.bin) from the KITTI dataset.
 
 ### Requirements
