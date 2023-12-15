@@ -1,18 +1,16 @@
 from PIL import Image
 from datasets.transforms import joint_transforms
-import os
-import random
+#import os
+#import random
 import torch
-import torch.nn as nn
+# import torch.nn as nn
 import numpy as np
-import torchvision.transforms.functional as TF
+# import torchvision.transforms.functional as TF
 from datasets.transforms import *
 import torchvision.transforms as standard_transforms
 from datasets.transforms.transforms import MaskToTensor
 from datasets.transforms.joint_transforms import Resize, RandomCrop, RandomHorizontallyFlip
 from torch.utils.data import Dataset
-from deeplab import Deeplab
-import network
 
 class Day2NightDataset(Dataset):
     def __init__(self, opt):
