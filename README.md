@@ -1,6 +1,6 @@
 # Data Augmentation (DA)
 
-## LiDAR Super-Resolution (LSR)
+## Camera Data Augmentation (CDA)
 
 ### Introduction
 
