@@ -6,13 +6,13 @@
 
 * This repository is released for Camera Data Augmentation (CDA).
 * To do CDA, this work changes the weather of orginal image from sunny to specific adverse weather
-* This works on velodyne files (*.bin) from the KITTI dataset.
+* This works on image files (*.png) from the Cityscapes dataset.
 
 ### Requirements
-Python 3.8.13\
+Python 3.9.16\
 Pytorch 1.12.0\
-Numpy 1.21.5\
-(For visualization) Vispy, Matplotlib
+Numpy 1.23.5\
+
 ### Demo
 ```
 cd ./lidar_model_da
