@@ -39,8 +39,8 @@ python ./VRI/voxel_ray_interaction.py
 ```
 
 ## Recent Updates
-* (2021.12.12) Intersection-based code update
-* (2022.12.29) LiDAR Super-Resolution code update
+* (2023.12.15) Image-to-image translation form day image to night image code update
+* (2023.12.15) Image-to-Image translation from sunny image to adverse weather image code update
 
 ## Background
 
