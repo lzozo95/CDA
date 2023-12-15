@@ -25,7 +25,6 @@ class Day2NightDataset(Dataset):
         self.target_transform = MaskToTensor()
         self.img_transform = standard_transforms.Compose([standard_transforms.ToTensor(),
                                                           standard_transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
-        # self.day_joint_transform = joint_transforms.Compose([Resize(size=(256, 512))])
         self.day_joint_transform = joint_transforms.Compose([Resize(size=(2048, 1024))])
         self.night_joint_transform = joint_transforms.Compose([Resize(size=(640, 360)),
                                                              RandomCrop(size=(512, 256))])
