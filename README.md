@@ -21,6 +21,8 @@ mkdir models
 ```
 2. Download weights files from this [link](https://).
 
+3. 
+
 ```
 cd ./lidar_model_da
 python main.py
