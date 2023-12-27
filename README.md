@@ -19,7 +19,7 @@ Numpy 1.23.5
 ```
 mkdir models
 ```
-2. Download weights files from this [linke](https://).
+2. Download weights files from this [link](https://).
 
 ```
 cd ./lidar_model_da
