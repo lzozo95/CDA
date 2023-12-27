@@ -14,6 +14,13 @@ Pytorch 1.12.0\
 Numpy 1.23.5
 
 ### Demo
+
+1. Make models directory with below codes
+```
+mkdir models
+```
+2. Download weights files from this [linke](https://).
+
 ```
 cd ./lidar_model_da
 python main.py
