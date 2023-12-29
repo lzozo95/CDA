@@ -61,7 +61,7 @@ python test_batch.py --config ./path/to/config_file --weather rain --output_fold
 ![Sunny --> Rain](/sources/rain.png)
 
 ### Sunny -> Snow
-![Sunny --> Rain](/sources/rain.png)
+![Sunny --> Snow](/sources/rain.png)
 
 ## Recent Updates
 * (2023.12.15) Image-to-image translation form day image to night image code update
