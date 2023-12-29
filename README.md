@@ -69,6 +69,8 @@ python test_batch.py --config ./path/to/config_file --weather rain --output_fold
 ## Recent Updates
 * (2023.12.15) Image-to-image translation form day image to night image code update
 * (2023.12.15) Image-to-Image translation from sunny image to adverse weather image code update
+* (2023.12.29) Add example images
+
 
 ## Background
 
