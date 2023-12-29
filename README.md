@@ -27,6 +27,8 @@ mkdir models
 python test_batch.py --config ./path/to/config_file --weather night --output_folder ./path/to/make/result --checkpoint ./path/to/trained_weight/gen_00050000.pt --output_only
 ```
 
+### Day -> Night
+
 ## Image-to-Image translation from sunny image to adverse weather image
 
 ### Introduction
