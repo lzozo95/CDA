@@ -67,7 +67,7 @@ python test_batch.py --config ./path/to/config_file --weather rain --output_fold
 ![Sunny --> Snow](/sources/snow.png)
 
 ## Final Results Video
-
+![Results Video](/sources/snow.png)
 
 ## Recent Updates
 * (2023.12.15) Image-to-image translation form day image to night image code update
