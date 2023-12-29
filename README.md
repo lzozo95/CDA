@@ -66,7 +66,7 @@ python test_batch.py --config ./path/to/config_file --weather rain --output_fold
 ### Sunny -> Snow
 ![Sunny --> Snow](/sources/snow.png)
 
-## Final Results Video
+## Final Results Video (Need time to load video)
 ![Results Video](/sources/output.gif)
 
 ## Recent Updates
