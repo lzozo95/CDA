@@ -75,7 +75,6 @@ python test_batch.py --config ./path/to/config_file --weather rain --output_fold
 * (2023.12.29) Add example images
 
 
-
 ## Background
 
 ### Outline
