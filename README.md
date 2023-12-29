@@ -42,8 +42,16 @@ Pytorch 1.12.0\
 Numpy 1.23.5
 
 ### Demo
+1. Make models directory with below codes
 ```
-python ./VRI/voxel_ray_interaction.py
+mkdir models
+```
+2. Download weights files from this [link](https://).
+
+3. Run with below commands
+
+```
+python test_batch.py --config ./path/to/config_file --weather night --output_folder ./path/to/make/result --checkpoint ./path/to/trained_weight/gen_00050000.pt --output_only
 ```
 
 ## Recent Updates
