@@ -54,6 +54,9 @@ mkdir models
 python test_batch.py --config ./path/to/config_file --weather rain --output_folder ./path/to/make/result --checkpoint ./path/to/trained_weight/gen_00050000.pt --output_only
 ```
 
+### Sunny -> Fog
+![Sunny --> Fog](/sources/fog.png)
+
 ## Recent Updates
 * (2023.12.15) Image-to-image translation form day image to night image code update
 * (2023.12.15) Image-to-Image translation from sunny image to adverse weather image code update
