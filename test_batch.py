@@ -60,7 +60,7 @@ parser.add_argument('--weather', type=str, required=True)
 # parser.add_argument('--image_root_N', type=str, default='/mnt/ssd1/ssb/dataset/acdc/rgb_anon/weather/val')
 # parser.add_argument('--image_list_N', type=str, default='/mnt/ssd1/ssb/dataset/acdc/acdc_weather_phase_image.txt')
 # parser.add_argument('--label_root_N', type=str, default='/mnt/ssd1/ssb/dataset/acdc/gt/weather/val')
-# parser.add_argument('--label_list_N', type=str, default='/mnt/ssd1/ssb/dataset/acdc/acdc_weather_phase_label.txt')
+# parser.add_argument('--label_list_N', type=str, defaultS='/mnt/ssd1/ssb/dataset/acdc/acdc_weather_phase_label.txt')
 
 
 # '/mnt/hdd2/lyj/Data/KIAPI/'

@@ -21,11 +21,10 @@ mkdir models
 ```
 2. Download weights files from this [link](https://).
 
-3. 
+3. Run with below commands
 
 ```
-cd ./lidar_model_da
-python main.py
+python test_batch.py --config ./path/to/config_file --weather night --output_folder ./path/to/make/result --checkpoint ./path/to/trained_weight/gen_00050000.pt --output_only
 ```
 
 ## Image-to-Image translation from sunny image to adverse weather image
