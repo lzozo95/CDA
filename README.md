@@ -28,7 +28,7 @@ python test_batch.py --config ./path/to/config_file --weather night --output_fol
 ```
 
 ### Day -> Night
-![Sunny --> Fog](/sources/fog.png)
+![Day --> Fog](/sources/fog.png)
 
 ## Image-to-Image translation from sunny image to adverse weather image
 
