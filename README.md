@@ -1,6 +1,6 @@
 # Camera Data Augmentation (CDA)
 
-## Image-to-image translation form day image to night image
+## Image-to-image translation from day image to night image
 
 ### Introduction
 
